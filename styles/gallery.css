@@ -3,7 +3,7 @@ section.gallery{
 
   width: 100%;
   padding: 2.5rem 2rem;
-  margin-inline:auto ;
+  margin-inline: auto;
 
   & header{
     text-align: center;
@@ -103,5 +103,25 @@ section.gallery{
   from{
     opacity: 0;
     transform: translateY(100%);
+  }
+}
+
+@media (width < 80em){
+  section.gallery{
+    padding: 1.5rem;
+
+    & .content{
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    & figure{
+
+      & img{
+        height: 16rem;
+      }
+    }
   }
 }

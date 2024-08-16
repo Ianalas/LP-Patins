@@ -44,3 +44,9 @@ nav{
     border-radius: 50%;
   }
 }
+
+@media (width < 80rem) {
+  nav{
+    
+  }
+}

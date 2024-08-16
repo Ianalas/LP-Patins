@@ -1,7 +1,8 @@
 footer{
   max-width: 80rem;
   width: 100%;
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 2rem;
+  padding-block-start: 4rem;
   margin-inline: auto;
 
   display: flex;
@@ -92,6 +93,27 @@ footer{
         scale: 0;
         transition: scale 400ms ease, opacity 400ms linear;
       }
+    }
+  }
+}
+
+@media (width < 80em){
+  footer{
+    padding: 1.5rem;
+    padding-block-start: 3rem;
+
+    flex-direction: column;
+    gap: 3rem;
+
+    align-items: start;
+
+    & a{
+      font-size: 1rem;
+    }
+    & .navigate{
+      flex-direction: column;
+      align-items: start;
+      gap: 1.5rem;
     }
   }
 }
